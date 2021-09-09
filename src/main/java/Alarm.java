@@ -1,5 +1,5 @@
 public class Alarm {
-    public static String checkLargerThirty(int people, String alarmLevel) {
+    public static String checkLimit(int people, String alarmLevel) {
 
         int peopleLimit;
         switch (alarmLevel) {

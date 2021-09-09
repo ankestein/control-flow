@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class AlarmTest {
@@ -11,7 +10,7 @@ public class AlarmTest {
         String alarmLevel = "gelb";
 
         //when
-        String result = Alarm.checkLargerThirty(people, alarmLevel);
+        String result = Alarm.checkLimit(people, alarmLevel);
 
         //then
         Assertions.assertEquals("Zu viele Personen", result);
@@ -24,7 +23,7 @@ public class AlarmTest {
         String alarmLevel = "gelb";
 
         //when
-        String result = Alarm.checkLargerThirty(people, alarmLevel);
+        String result = Alarm.checkLimit(people, alarmLevel);
 
         //then
         Assertions.assertEquals("Maximale Personenzahl nicht überschritten", result);
@@ -37,7 +36,7 @@ public class AlarmTest {
         String alarmLevel = "gelb";
 
         //when
-        String result = Alarm.checkLargerThirty(people, alarmLevel);
+        String result = Alarm.checkLimit(people, alarmLevel);
 
         //then
         Assertions.assertEquals("Maximale Personenzahl nicht überschritten", result);
@@ -50,7 +49,7 @@ public class AlarmTest {
         String alarmLevel = "grün";
 
         //when
-        String result = Alarm.checkLargerThirty(people, alarmLevel);
+        String result = Alarm.checkLimit(people, alarmLevel);
 
         //then
         Assertions.assertEquals("Zu viele Personen", result);
@@ -63,7 +62,7 @@ public class AlarmTest {
         String alarmLevel = "grün";
 
         //when
-        String result = Alarm.checkLargerThirty(people, alarmLevel);
+        String result = Alarm.checkLimit(people, alarmLevel);
 
         //then
         Assertions.assertEquals("Maximale Personenzahl nicht überschritten", result);
@@ -76,7 +75,7 @@ public class AlarmTest {
         String alarmLevel = "grün";
 
         //when
-        String result = Alarm.checkLargerThirty(people, alarmLevel);
+        String result = Alarm.checkLimit(people, alarmLevel);
 
         //then
         Assertions.assertEquals("Maximale Personenzahl nicht überschritten", result);
@@ -89,7 +88,7 @@ public class AlarmTest {
         String alarmLevel = "rot";
 
         //when
-        String result = Alarm.checkLargerThirty(people, alarmLevel);
+        String result = Alarm.checkLimit(people, alarmLevel);
 
         //then
         Assertions.assertEquals("Zu viele Personen", result);
@@ -102,7 +101,7 @@ public class AlarmTest {
         String alarmLevel = "rot";
 
         //when
-        String result = Alarm.checkLargerThirty(people, alarmLevel);
+        String result = Alarm.checkLimit(people, alarmLevel);
 
         //then
         Assertions.assertEquals("Maximale Personenzahl nicht überschritten", result);
@@ -115,7 +114,7 @@ public class AlarmTest {
         String alarmLevel = "blau";
 
         //when
-        String result = Alarm.checkLargerThirty(people, alarmLevel);
+        String result = Alarm.checkLimit(people, alarmLevel);
 
         //then
         Assertions.assertEquals("Alarm level unknown.", result);
