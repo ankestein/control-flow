@@ -1,9 +1,11 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class AlarmTest {
 
     @Test
+    @DisplayName("Alarm level yellow and 31 people should return a warning")
     public void Alarm_yellow_Larger30_returnWarning() {
         //given
         int people = 31;
