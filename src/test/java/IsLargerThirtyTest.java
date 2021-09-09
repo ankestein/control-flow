@@ -27,6 +27,18 @@ public class IsLargerThirtyTest {
         Assertions.assertEquals("Maximale Personenzahl nicht überschritten", result);
     }
 
+    @Test
+    public void testThirty(){
+        //given
+        int people = 30;
+
+        //when
+        String result = IsLargerThirty.checkLargerThirty(people);
+
+        //then
+        Assertions.assertEquals("Maximale Personenzahl nicht überschritten", result);
+    }
+
 
 
 }
