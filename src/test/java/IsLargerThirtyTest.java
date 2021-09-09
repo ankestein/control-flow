@@ -1,9 +1,11 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class IsLargerThirtyTest {
 
     @Test
+    @DisplayName("")
     public void testLargerThirty() {
         //given
         int people = 35;
